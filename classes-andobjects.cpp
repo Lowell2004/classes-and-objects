@@ -66,8 +66,7 @@ int main() {
     int choice;
     string title, author;
     int year;
-
-    do {
+    while (true){
         cout << "\nLibrary Management System:" << endl;
         cout << "1. Add Book" << endl;
         cout << "2. Display All Books" << endl;
@@ -100,13 +99,13 @@ int main() {
                 break;
 
             case 4:
-                cout << "Exiting the program..." << endl;
+                cout << "Exiting the program..." << endl; 
                 break;
 
             default:
                 cout << "Invalid choice. Please try again." << endl;
         }
-    } while (choice != 4);
+    };
 
     return 0;
 }
